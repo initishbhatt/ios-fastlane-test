@@ -30,10 +30,14 @@ jobs:
         with:
          xcode-version: latest-stable
          
-      - uses: actions/setup-ruby@v1
+      - name: Setup Ruby
+  # You may pin to the exact commit or the version.
+  # uses: ruby/setup-ruby@8f312efe1262fb463d906e9bf040319394c18d3e
+        uses: ruby/setup-ruby@v1.92.0
         with:
-         ruby-version: '2.7.2'
-         
+          ruby-version: 2.6
+          bundler-cache: true
+        
       - uses: maierj/fastlane-action@v2.0.1
         with:
          lane: 'pr_check'
