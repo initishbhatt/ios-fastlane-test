@@ -1,0 +1,15 @@
+fastlanesample.xcodeproj/xcuserdata/**
+fastlanesample.xcodeproj/project.xcworkspace/xcuserdata/**
+fastlanesample.xcodeproj/project.xcworkspace/xcshareddata/sharethemeal.xccheckout
+fastlanesample.xcworkspace/xcuserdata/**
+
+xcuserdata
+.xcuserdata
+.DS_Store
+
+Pods/**
+
+fastlane/report.xml
+fastlane/README.md
+/fastlane/README.md
+/fastlane/report.xml
