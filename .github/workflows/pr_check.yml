@@ -29,7 +29,11 @@ jobs:
         uses: maxim-lobanov/setup-xcode@v1
         with:
          xcode-version: latest-stable
-          
-      - name: Run pr check 
-        run: |
-         bundle exec fastlane pr_check
+         
+      - uses: actions/setup-ruby@v1
+        with:
+         ruby-version: '2.7.2'
+         
+      - uses: maierj/fastlane-action@v2.0.1
+        with:
+         lane: 'pr_check'
