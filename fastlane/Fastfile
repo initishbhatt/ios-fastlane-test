@@ -19,7 +19,6 @@ platform :ios do
   desc "Description of what the lane does"
   lane :pr_check do
     cocoapods
-    swiftLint
     sh "../Tools/TestScript.sh"
     run_tests(scheme: "FastlaneSampleTests")
   end
